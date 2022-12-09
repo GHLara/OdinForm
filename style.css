@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 14, 14);
+}
+
+/* This is the CSS for the image and logo at the left*/
+.content{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+
+.logo{
+    position: absolute;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    color: #fff;
+    text-shadow: 2px 1px #20c776;
+    top: 80px;
+}
+
+/*This is the CSS for the mensage at the top right of the site */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(6, 6, 6);
+    height: 30vh;
+    color: #fff;
+    box-shadow: 0 8px 6px -6px #00934d;
+}
+
+.text-area p{
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+
+}
+
+/*This is the CSS for all the form and submit button*/
+form{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.form-area{
+    display: flex;
+    float: left;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 60px 10px 20px 40px;
+    width: 100%;
+    height: fit-content;
+}
+
+.input{
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 40px 0px 0px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+    color: #fff;
+    font-size: 16px;
+    background-color: rgb(12, 14, 14);
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+}
+
+.input:-webkit-autofill {transition: background-color 5000s ease-in-out 0s;}
+
+.input input:focus{
+    outline: none;
+    border: 1px solid darkgray;
+    box-shadow: 0 8px 6px -6px #00934d;
+    background-color: rgb(12, 14, 14);
+}
+
+input:-webkit-autofill {
+    border: none;
+    border-radius: .3rem;
+    caret-color: #fff; /* Pour le I quand on édite */
+    background: rgb(12, 14, 14);
+    border: 1px solid darkgray;
+    /* webkit autofill */
+    -webkit-text-fill-color: #fff; /* Surcharge la font color d'autofill */
+    -webkit-background-clip: text; /* Supprime le background autofill, utile pour le border radius */
+    box-shadow: 0 0 0 50px rgb(12, 14, 14) inset; /* Ajoute un fake background à base d'ombrage aplatit */
+}
+
+.submit-button{
+    height: 150px;
+    padding: 20px 10px 20px 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.submit-button button{
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(12, 14, 14);
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px #00934d;
+    color: #fff;
+}
+
+.submit-button button:active{
+    transform: scale(0.98);
+}
+
+.submit-button button:hover{
+    cursor: pointer;
+}
+
+.submit-button p{
+    padding-top: 20px;
+    color: #fff
+}
+
+.submit-button a{
+    color: #fff;
+}
